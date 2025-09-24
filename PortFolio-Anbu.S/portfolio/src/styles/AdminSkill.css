@@ -1,0 +1,198 @@
+/* ===== AdminSkill.css ===== */
+
+/* Main Container */
+.admin-skill-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9fafc;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.admin-skill-container h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* Form Styling */
+.admin-skill-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.admin-skill-form .form-group {
+  margin-bottom: 15px;
+}
+
+.admin-skill-form .form-label {
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.admin-skill-form input,
+.admin-skill-form select {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.admin-skill-form input:focus,
+.admin-skill-form select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.btn-submit {
+  background: #007bff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #fff;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: #0056b3;
+}
+
+/* Skill List */
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-item {
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.skill-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.skill-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.cert-link {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.cert-link:hover {
+  text-decoration: underline;
+}
+
+/* Actions */
+.skill-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-edit,
+.btn-delete {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-edit {
+  background: #ffc107;
+  color: #000;
+}
+
+.btn-edit:hover {
+  background: #e0a800;
+}
+
+.btn-delete {
+  background: #dc3545;
+  color: #fff;
+}
+
+.btn-delete:hover {
+  background: #b52a36;
+}
+
+/* ========= Responsive ========= */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .admin-skill-container {
+    padding: 15px;
+  }
+
+  .admin-skill-container h3 {
+    font-size: 1.7rem;
+  }
+
+  .skill-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .skill-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .admin-skill-container {
+    padding: 12px;
+  }
+
+  .admin-skill-container h3 {
+    font-size: 1.4rem;
+  }
+
+  .admin-skill-form {
+    padding: 15px;
+  }
+
+  .skill-item {
+    padding: 12px 15px;
+  }
+
+  .skill-actions {
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .skill-actions button {
+    flex: 1;
+  }
+}

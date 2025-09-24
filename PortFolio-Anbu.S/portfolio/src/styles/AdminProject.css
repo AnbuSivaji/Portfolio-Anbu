@@ -1,0 +1,106 @@
+/* AdminProject.css */
+/* Scoped styles for AdminProject only */
+.admin-project-container {
+	max-width: 1000px;
+	margin: 40px auto;
+	padding: 20px;
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+	font-family: "Segoe UI", sans-serif;
+}
+
+/* Title */
+.admin-project-container h3 {
+	text-align: center;
+	font-weight: 600;
+	margin-bottom: 25px;
+	color: #333;
+}
+
+/* Form */
+.admin-project-container form {
+	background: #f9f9f9;
+	padding: 20px;
+	border-radius: 10px;
+	border: 1px solid #ddd;
+	margin-bottom: 30px;
+}
+
+.admin-project-container .form-label {
+	font-weight: 500;
+	color: #444;
+}
+
+.admin-project-container .form-control {
+	border-radius: 8px;
+	box-shadow: none;
+	transition: 0.3s;
+}
+
+.admin-project-container .form-control:focus {
+	border-color: #007bff;
+	box-shadow: 0 0 6px rgba(0, 123, 255, 0.4);
+}
+
+/* Submit Button */
+.admin-project-container button[type='submit'] {
+	transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.admin-project-container button[type='submit']:hover {
+	transform: scale(1.05);
+}
+
+/* Project Cards */
+.admin-project-container .card {
+	border: 1px solid #eee;
+	border-radius: 12px;
+	overflow: hidden;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admin-project-container .card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.admin-project-container .card img {
+	border-radius: 10px;
+	margin-bottom: 10px;
+	object-fit: cover;
+	width: 100%;
+	height: auto;
+}
+
+/* Card Body */
+.admin-project-container .card-body h5 {
+	color: #007bff;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.admin-project-container .card-body p {
+	color: #555;
+	font-size: 14px;
+}
+
+/* Action Buttons */
+.admin-project-container .btn-sm {
+	padding: 5px 12px;
+	border-radius: 6px;
+	font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.admin-project-container {
+		padding: 15px;
+	}
+
+	.admin-project-container .row {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+}

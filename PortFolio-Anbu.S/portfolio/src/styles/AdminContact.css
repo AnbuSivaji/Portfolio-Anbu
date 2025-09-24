@@ -1,0 +1,93 @@
+/* ===== AdminContact.css ===== */
+
+.admin-contact-container {
+  background: #121212;
+  color: #e0e0e0;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.admin-contact-container h3 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #00bcd4;
+  letter-spacing: 1px;
+}
+
+/* Table */
+.admin-contact-container .table {
+  background: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #e0e0e0;
+}
+
+.admin-contact-container .table th,
+.admin-contact-container .table td {
+  padding: 12px;
+  vertical-align: middle;
+  border: 1px solid #333;
+}
+
+.admin-contact-container .table thead {
+  background: #00bcd4;
+  color: #fff;
+}
+
+.admin-contact-container .table-striped tbody tr:nth-of-type(odd) {
+  background: #2a2a2a;
+}
+
+.admin-contact-container .table-striped tbody tr:nth-of-type(even) {
+  background: #1e1e1e;
+}
+
+.admin-contact-container .table tbody tr:hover {
+  background: #263238;
+  transition: 0.3s;
+}
+
+/* Responsive Table */
+.admin-contact-container .table-responsive {
+  border-radius: 10px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* No messages */
+.admin-contact-container p {
+  text-align: center;
+  color: #bdbdbd;
+  font-style: italic;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .admin-contact-container {
+    padding: 1rem;
+  }
+
+  .admin-contact-container h3 {
+    font-size: 1.5rem;
+  }
+
+  .admin-contact-container .table th,
+  .admin-contact-container .table td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+@media (max-width: 480px) {
+  .admin-contact-container h3 {
+    font-size: 1.2rem;
+  }
+
+  .admin-contact-container .table th,
+  .admin-contact-container .table td {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+}

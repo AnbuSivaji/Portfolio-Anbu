@@ -1,0 +1,146 @@
+/* ===== AdminEducation.css ===== */
+
+.admin-education-container {
+  background: #121212;
+  color: #e0e0e0;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.admin-education-container h3 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #00bcd4;
+  letter-spacing: 1px;
+}
+
+/* Form Styling */
+.admin-education-container form {
+  background: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+.admin-education-container .form-label {
+  color: #bdbdbd;
+  font-weight: 500;
+}
+
+.admin-education-container .form-control,
+.admin-education-container .form-select,
+.admin-education-container textarea {
+  background: #2a2a2a;
+  border: 1px solid #444;
+  color: #f1f1f1;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.admin-education-container .form-control:focus,
+.admin-education-container .form-select:focus,
+.admin-education-container textarea:focus {
+  border-color: #00bcd4;
+  box-shadow: 0 0 8px rgba(0, 188, 212, 0.5);
+  outline: none;
+}
+
+/* Buttons */
+.admin-education-container .btn-primary {
+  background: #00bcd4;
+  border: none;
+  font-weight: 600;
+  padding: 0.7rem;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.admin-education-container .btn-primary:hover {
+  background: #0097a7;
+}
+
+.admin-education-container .btn-warning {
+  background: #ff9800;
+  border: none;
+}
+
+.admin-education-container .btn-warning:hover {
+  background: #e68900;
+}
+
+.admin-education-container .btn-danger {
+  background: #f44336;
+  border: none;
+}
+
+.admin-education-container .btn-danger:hover {
+  background: #d32f2f;
+}
+
+.admin-education-container .btn-outline-success {
+  border: 1px solid #4caf50;
+  color: #4caf50;
+}
+
+.admin-education-container .btn-outline-success:hover {
+  background: #4caf50;
+  color: #fff;
+}
+
+/* Card Styling */
+.admin-education-container .card {
+  background: #1e1e1e;
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-education-container .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+.admin-education-container .card h5 {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.admin-education-container .card h6 {
+  color: #b0bec5;
+}
+
+.admin-education-container .card p {
+  color: #cfd8dc;
+  font-size: 0.95rem;
+}
+
+.admin-education-container .badge {
+  font-size: 0.85rem;
+  padding: 0.5em 0.7em;
+  border-radius: 6px;
+}
+
+/* Image */
+.admin-education-container .card img {
+  border-radius: 8px;
+  background: #2c2c2c;
+  padding: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admin-education-container {
+    padding: 1rem;
+  }
+
+  .admin-education-container h3 {
+    font-size: 1.5rem;
+  }
+
+  .admin-education-container .card {
+    padding: 1rem;
+  }
+}

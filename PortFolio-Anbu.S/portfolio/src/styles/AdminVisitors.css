@@ -1,0 +1,84 @@
+/* ===== AdminVisitors.css ===== */
+
+.admin-visitors-container {
+  background: #121212;
+  color: #e0e0e0;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.admin-visitors-container h3 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #ff9800;
+  letter-spacing: 1px;
+}
+
+/* No visitors */
+.admin-visitors-container p {
+  text-align: center;
+  color: #bdbdbd;
+  font-style: italic;
+}
+
+/* Table */
+.admin-visitors-container .table {
+  background: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #e0e0e0;
+}
+
+.admin-visitors-container .table th,
+.admin-visitors-container .table td {
+  padding: 12px;
+  vertical-align: middle;
+  border: 1px solid #333;
+}
+
+.admin-visitors-container .table thead {
+  background: #ff9800;
+  color: #fff;
+}
+
+.admin-visitors-container .table-striped tbody tr:nth-of-type(odd) {
+  background: #2a2a2a;
+}
+
+.admin-visitors-container .table-striped tbody tr:nth-of-type(even) {
+  background: #1e1e1e;
+}
+
+.admin-visitors-container .table tbody tr:hover {
+  background: #263238;
+  transition: 0.3s;
+}
+
+/* Responsive Table */
+.admin-visitors-container .table-responsive {
+  border-radius: 10px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .admin-visitors-container {
+    padding: 1rem;
+  }
+
+  .admin-visitors-container h3 {
+    font-size: 1.3rem;
+  }
+
+  .admin-visitors-container .table th,
+  .admin-visitors-container .table td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+
+

@@ -1,0 +1,121 @@
+/* -----------------------
+   DASHBOARD CONTAINER
+------------------------ */
+.dashboard-container {
+  min-height: 100vh;
+  padding: 30px;
+  background: linear-gradient(135deg, #f0f4f8, #d9e4ec);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* -----------------------
+   HEADER
+------------------------ */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 15px 20px;
+  background: #2a5298;
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-header h2 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.dashboard-header .btn {
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dashboard-header .btn-danger {
+  background: #d9534f;
+  color: #fff;
+}
+
+.dashboard-header .btn-danger:hover {
+  background: #c9302c;
+  transform: translateY(-2px);
+}
+
+/* -----------------------
+   GRID LAYOUT
+------------------------ */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* -----------------------
+   DASHBOARD CARDS
+------------------------ */
+.dashboard-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2a5298;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-card:hover {
+  background: linear-gradient(135deg, #2a5298, #1e3c72);
+  color: #fff;
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* -----------------------
+   RESPONSIVE
+------------------------ */
+@media (max-width: 1024px) {
+  /* Tablet - 2 cards per row */
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dashboard-header h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile - 1 card per row */
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-container {
+    padding: 20px;
+  }
+
+  .dashboard-card {
+    font-size: 1rem;
+    padding: 20px;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .dashboard-header h2 {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,187 @@
+/* Container */
+.admin-experience-container {
+  padding: 20px;
+  background: #121212; /* Dark mode background */
+  min-height: 100vh;
+  color: #eaeaea;
+  border-radius: 8px;
+}
+
+/* Heading */
+.admin-experience-container h3 {
+  color: #f1f1f1;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form Section */
+.admin-experience-container form {
+  background: #1e1e1e;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  margin-bottom: 30px;
+}
+
+/* Labels */
+.admin-experience-container .form-label {
+  font-weight: 600;
+  color: #cfcfcf;
+}
+
+/* Inputs + Textarea */
+.admin-experience-container .form-control {
+  background: #2a2a2a;
+  border: 1px solid #333;
+  color: #f1f1f1;
+  border-radius: 8px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.admin-experience-container .form-control:focus {
+  border-color: #0d6efd;
+  background: #2e2e2e;
+  box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.3);
+}
+
+/* Submit Button */
+.admin-experience-container button[type='submit'] {
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #0d6efd, #0dcaf0);
+  border: none;
+  color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admin-experience-container button[type='submit']:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.4);
+}
+
+/* Card Section */
+.admin-experience-container .card {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  color: #eaeaea;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-experience-container .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+/* Card image */
+.admin-experience-container .card img {
+  border-radius: 8px;
+  max-height: 150px;
+  object-fit: contain;
+  background: #222;
+  padding: 10px;
+}
+
+/* Card text */
+.admin-experience-container .card-body h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.admin-experience-container .card-body h6 {
+  font-size: 15px;
+  color: #aaaaaa;
+}
+
+.admin-experience-container .card-body p {
+  font-size: 14px;
+  margin: 4px 0;
+  color: #d1d1d1;
+}
+
+/* Buttons inside card */
+.admin-experience-container .card-body .btn {
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.admin-experience-container .btn-warning {
+  background: #ffc107;
+  border: none;
+  color: #000;
+}
+
+.admin-experience-container .btn-danger {
+  background: #dc3545;
+  border: none;
+  color: #fff;
+}
+
+.admin-experience-container .btn-outline-success {
+  border-color: #198754;
+  color: #20c997;
+}
+
+.admin-experience-container .btn:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 992px) {
+  .admin-experience-container form {
+    padding: 15px;
+  }
+
+  .admin-experience-container .card-body h5 {
+    font-size: 16px;
+  }
+
+  .admin-experience-container .card-body p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-experience-container {
+    padding: 15px;
+  }
+
+  .admin-experience-container h3 {
+    font-size: 20px;
+  }
+
+  .admin-experience-container .form-control {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .admin-experience-container button[type='submit'] {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .admin-experience-container .row > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .admin-experience-container h3 {
+    font-size: 18px;
+  }
+
+  .admin-experience-container .card {
+    padding: 12px;
+  }
+}

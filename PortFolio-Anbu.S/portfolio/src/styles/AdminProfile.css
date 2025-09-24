@@ -1,0 +1,116 @@
+/* AdminProfile.css */
+/* Scoped to AdminProfile only */
+.admin-profile-container {
+	max-width: 900px;
+	margin: 40px auto;
+	padding: 20px;
+	background: #ffffff;
+	border-radius: 12px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+	font-family: "Segoe UI", sans-serif;
+}
+
+/* Title */
+.admin-profile-container h2 {
+	text-align: center;
+	margin-bottom: 25px;
+	color: #333;
+	font-weight: 600;
+}
+
+/* Form */
+.admin-profile-container form {
+	background: #f9f9f9;
+	padding: 20px;
+	border-radius: 10px;
+	border: 1px solid #ddd;
+	margin-bottom: 30px;
+}
+
+.admin-profile-container .form-label {
+	font-weight: 500;
+	color: #444;
+}
+
+.admin-profile-container .form-control {
+	border-radius: 8px;
+	box-shadow: none;
+	transition: 0.3s;
+}
+
+.admin-profile-container .form-control:focus {
+	border-color: #007bff;
+	box-shadow: 0 0 6px rgba(0, 123, 255, 0.4);
+}
+
+/* Button */
+.admin-profile-container button {
+	transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.admin-profile-container button:hover {
+	transform: scale(1.05);
+}
+
+/* Profile List */
+.admin-profile-container .list-group {
+	margin-top: 20px;
+}
+
+.admin-profile-container .list-group-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	padding: 15px;
+	border-radius: 8px;
+	margin-bottom: 10px;
+	border: 1px solid #eee;
+	background: #fafafa;
+}
+
+.admin-profile-container .list-group-item strong {
+	color: #007bff;
+}
+
+.admin-profile-container .list-group-item small {
+	color: #666;
+	display: block;
+	margin-top: 5px;
+}
+
+.admin-profile-container .list-group-item a {
+	color: #28a745;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.admin-profile-container .list-group-item a:hover {
+	text-decoration: underline;
+}
+
+/* Buttons inside list */
+.admin-profile-container .btn-sm {
+	padding: 5px 12px;
+	border-radius: 6px;
+	font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.admin-profile-container {
+		padding: 15px;
+	}
+
+	.admin-profile-container .list-group-item {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.admin-profile-container .list-group-item div:last-child {
+		margin-top: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+	}
+}

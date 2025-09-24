@@ -1,0 +1,153 @@
+/* --------- Container --------- */
+.container {
+  max-width: 1400px;
+}
+
+h2,
+h4 {
+  font-weight: 700;
+  color: #222;
+}
+
+/* --------- Scroll Animation --------- */
+.slide-container {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1s ease-in-out;
+}
+.slide-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --------- Carousel Wrapper --------- */
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+/* --------- Arrows --------- */
+.arrow-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: #fff;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.arrow-btn:hover {
+  background: rgba(0, 0, 0, 0.85);
+  transform: scale(1.1);
+}
+.arrow-btn.left {
+  left: 10px;
+}
+.arrow-btn.right {
+  right: 10px;
+}
+
+/* --------- Cards --------- */
+.card {
+  flex: 0 0 calc(20% - 20px);
+  border-radius: 20px;
+  padding: 25px 20px;
+  background: #fff;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* --------- Skill / Cert Icon --------- */
+.skill-icon {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.card:hover .skill-icon {
+  transform: scale(1.15);
+}
+
+/* --------- Progress Bar --------- */
+.progress {
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #e9ecef;
+  margin-top: 12px;
+}
+.progress-bar {
+  background: linear-gradient(90deg, #ff6b6b, #4dabf7);
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1.5;
+  transition: width 1s ease;
+}
+
+/* --------- Buttons --------- */
+.btn-outline-primary {
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+.btn-outline-primary:hover {
+  background: linear-gradient(90deg, #4dabf7, #51cf66);
+  color: #fff;
+  border: none;
+  transform: scale(1.05);
+}
+
+/* --------- Responsive --------- */
+@media (max-width: 992px) {
+  .card {
+    flex: 0 0 calc(33.333% - 20px);
+  }
+  .skill-icon {
+    width: 130px;
+    height: 130px;
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    flex: 0 0 calc(50% - 15px);
+  }
+  .skill-icon {
+    width: 110px;
+    height: 110px;
+  }
+}
+@media (max-width: 576px) {
+  .card {
+    flex: 0 0 100%;
+  }
+  .skill-icon {
+    width: 90px;
+    height: 90px;
+  }
+}

@@ -1,0 +1,198 @@
+/* Login.css */
+/* Everything is scoped under .login-page so it won't affect other components */
+
+.login-page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+	font-family: 'Segoe UI', sans-serif;
+	color: #fff;
+	position: relative;
+	overflow: hidden;
+}
+
+/* 🔥 Dragon Animation */
+.dragon-fire {
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+	text-align: center;
+}
+
+.dragon-fire.show-fire {
+	opacity: 1;
+	animation: bounce 1.5s ease-in-out;
+}
+
+.fire-breath {
+	width: 120px;
+	height: 120px;
+	background: radial-gradient(circle, rgba(255, 87, 34, 0.9), rgba(255, 0, 0, 0.6));
+	border-radius: 50%;
+	position: absolute;
+	top: 60px;
+	left: 50%;
+	transform: translateX(-50%);
+	animation: fire 1s infinite alternate;
+}
+
+.fire-welcome {
+	margin-top: 140px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #ffcc00;
+	animation: fadeIn 2s ease-in-out;
+}
+
+/* 🐲 Animations */
+@keyframes fire {
+	from {
+		transform: translateX(-50%) scale(1);
+		opacity: 0.8;
+	}
+	to {
+		transform: translateX(-50%) scale(1.4);
+		opacity: 0.3;
+	}
+}
+
+@keyframes bounce {
+	0%, 100% {
+		transform: translate(-50%, 0);
+	}
+	50% {
+		transform: translate(-50%, -20px);
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* 🔐 Login Card */
+.login-card {
+	background: rgba(255, 255, 255, 0.1);
+	padding: 30px;
+	border-radius: 15px;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+	width: 100%;
+	max-width: 380px;
+	backdrop-filter: blur(10px);
+	animation: slideUp 1s ease-in-out;
+}
+
+@keyframes slideUp {
+	from {
+		transform: translateY(50px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.login-title {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 22px;
+	color: #ffcc00;
+}
+
+/* Input Groups */
+.input-group {
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.input-group label {
+	font-size: 14px;
+	margin-bottom: 5px;
+	color: #ddd;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.input-group input {
+	padding: 10px;
+	border-radius: 8px;
+	border: none;
+	outline: none;
+	font-size: 14px;
+	background: rgba(255, 255, 255, 0.2);
+	color: #fff;
+	transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+	background: rgba(255, 255, 255, 0.3);
+	box-shadow: 0 0 5px #ffcc00;
+}
+
+/* Password Wrapper */
+.password-wrapper {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.password-wrapper input {
+	width: 100%;
+	padding-right: 40px;
+}
+
+.toggle-password {
+	position: absolute;
+	right: 10px;
+	cursor: pointer;
+	color: #ccc;
+	font-size: 16px;
+	transition: color 0.3s ease;
+}
+
+.toggle-password:hover {
+	color: #ffcc00;
+}
+
+/* Button */
+.login-btn {
+	width: 100%;
+	padding: 12px;
+	background: linear-gradient(135deg, #ff512f, #dd2476);
+	border: none;
+	border-radius: 8px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+	background: linear-gradient(135deg, #dd2476, #ff512f);
+	transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.login-card {
+		padding: 20px;
+		max-width: 300px;
+	}
+
+	.login-title {
+		font-size: 18px;
+	}
+}
